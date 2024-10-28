@@ -127,36 +127,31 @@
     </p>
     <div class="text-center">
       <button class="btn btn-primary mt-3" data-aos="fade-up" data-aos-duration="1000" data-bs-toggle="modal" data-bs-target="#contactModal">Learn More</button>
+      <button class="btn btn-secondary mt-3 ms-2" data-aos="fade-up" data-aos-duration="1000" data-bs-toggle="modal" data-bs-target="#subscriptionModal">Subscribe</button>
     </div>
   </div>
 </section>
 
-<!-- Contact Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+<!-- Subscription Modal -->
+<div class="modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <h5 class="modal-title" id="subscriptionModalLabel">Subscribe to our Newsletter</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class="row">
-          <div class="col-md-6">
-            <h6>Phone</h6>
-            <p>+62 234 567 890</p>
-            <h6>Email</h6>
-            <p>WillowStudio@gmail.com</p>
-            <h6>Address</h6>
-            <p>Town House Cordoba No.59, RT.6/RW.2, Kamal Muara, Kec. Penjaringan, Jkt Utara, Daerah Khusus Ibukota Jakarta 14470</p>
+        <form id="subscriptionForm">
+          <div class="mb-3">
+            <label for="subscriberName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="subscriberName" placeholder="Enter your name" required>
           </div>
-          <div class="col-md-6">
-            <h6>Location</h6>
-            <!-- Google Maps Embed -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d721.8516487108834!2d106.7428804757219!3d-6.108763772615911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1730126738648!5m2!1sen!2sid"
-              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="mb-3">
+            <label for="subscriberEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="subscriberEmail" placeholder="Enter your email" required>
           </div>
-        </div>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -164,6 +159,7 @@
     </div>
   </div>
 </div>
+
 
   <!-- Footer Section -->
   <footer>
