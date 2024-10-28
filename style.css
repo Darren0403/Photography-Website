@@ -1,0 +1,183 @@
+/* Basic styling for the layout */
+body, html{
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Header styling */
+  .header {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #f9f9f9;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    font-family: 'Cursive';
+  }
+  
+  /* Intro section styling */
+  .intro {
+    background-image: url('https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2021/04/what-to-do-with-old-film-camera-1.jpg?fit=1500%2C1000&ssl=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 100px 20px;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+  }
+
+  .intro h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .intro p {
+    font-family: "Playfair Display", serif;
+    font-weight: normal; 
+    font-style: normal;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  .intro img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    display: none;
+  }
+  
+  /* Story section styling */
+  .story-section {
+    padding: 4rem 1rem;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .story-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
+    font-weight: normal; 
+    font-style: normal;
+  }
+  
+  /* Categories styling */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 1rem;
+    background-color: #948f8f;
+  }
+  
+  .category {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 200px;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background-color: #706f6f;
+    font-family: "Playfair Display", serif;
+    font-weight: normal; 
+    font-style: normal;
+  }
+
+  .category img {
+    width: 110px; 
+    height: 100px; 
+    margin-bottom: 10px; 
+    border-radius: 5px;
+  }
+  
+  .category:hover {
+    background: #5a5353;
+    transform: scale(1.05);
+  }
+
+  .container2 {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.title {
+    margin-bottom: 2rem;
+    text-align: center; 
+    font-family: "Playfair Display", serif;
+    font-weight: normal; 
+    font-style: normal;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+}
+
+.photo {
+    width: 100%; 
+    height: 200px; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.photo img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+    border-radius: 5px;
+}
+
+.photo img:hover {
+    transform: scale(1.05); 
+}
+
+.about-us {
+  background-color: #f9f9f9; 
+  padding: 40px 0; 
+}
+
+.about-us .title {
+  margin-bottom: 1.5rem; 
+}
+
+.about-us p {
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+
+  /* Footer styling */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-family: "Playfair Display", serif;
+    font-weight: normal; 
+    font-style: normal;
+  }
+  
+  .social-icons a {
+    font-size: 1.8rem;
+    margin: 0 0.5rem;
+    color: #fff;
+  }
